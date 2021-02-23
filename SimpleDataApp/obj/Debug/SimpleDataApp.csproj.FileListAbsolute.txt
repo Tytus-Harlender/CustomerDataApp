@@ -1,0 +1,12 @@
+C:\Users\Tytus\source\repos\SimpleDataApp\SimpleDataApp\bin\Debug\SimpleDataApp.exe.config
+C:\Users\Tytus\source\repos\SimpleDataApp\SimpleDataApp\bin\Debug\SimpleDataApp.exe
+C:\Users\Tytus\source\repos\SimpleDataApp\SimpleDataApp\bin\Debug\SimpleDataApp.pdb
+C:\Users\Tytus\source\repos\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.csprojAssemblyReference.cache
+C:\Users\Tytus\source\repos\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.FillOrCancel.resources
+C:\Users\Tytus\source\repos\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.Navigation.resources
+C:\Users\Tytus\source\repos\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.NewCustomer.resources
+C:\Users\Tytus\source\repos\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.Properties.Resources.resources
+C:\Users\Tytus\source\repos\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.csproj.GenerateResource.cache
+C:\Users\Tytus\source\repos\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.csproj.CoreCompileInputs.cache
+C:\Users\Tytus\source\repos\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.exe
+C:\Users\Tytus\source\repos\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.pdb
