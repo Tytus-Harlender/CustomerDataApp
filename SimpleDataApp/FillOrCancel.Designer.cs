@@ -73,6 +73,7 @@
             this.btnFindByOrderID.TabIndex = 3;
             this.btnFindByOrderID.Text = "Find order";
             this.btnFindByOrderID.UseVisualStyleBackColor = true;
+            this.btnFindByOrderID.Click += new System.EventHandler(this.btnFindByOrderID_Click);
             // 
             // btnCancelOrder
             // 

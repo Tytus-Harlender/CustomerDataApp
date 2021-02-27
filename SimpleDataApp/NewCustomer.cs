@@ -48,7 +48,7 @@ namespace SimpleDataApp
         private void btnPlaceOrder_Click(object sender, System.EventArgs e)
         {
             using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.connString))
-            using (SqlCommand sqlCommand = new SqlCommand("Sales.uspNewCustomer", connection))
+            using (SqlCommand sqlCommand = new SqlCommand("Sales.uspPlaceNewOrder", connection))
             {
                 sqlCommand.CommandType = CommandType.StoredProcedure;
 
@@ -74,9 +74,9 @@ namespace SimpleDataApp
                     this._orderID = (int)sqlCommand.Parameters["@RC"].Value;
                     MessageBox.Show("Order number " + this._orderID + "has been submitted");
                 }
-                catch
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Order cannot be placed.");
+                    MessageBox.Show("Order cannot be placed. " + ex.Message);
                 }
                 finally
                 {
