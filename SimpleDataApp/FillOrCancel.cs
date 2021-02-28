@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using SimpleDataApp.Properties;
 
 namespace SimpleDataApp
 {
@@ -37,6 +38,32 @@ namespace SimpleDataApp
                 catch
                 {
                     MessageBox.Show("The requested order could not be loaded into the form.");
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+        }
+
+        private void btnCancelOrder_Click(object sender, System.EventArgs e)
+        {
+            using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.connString))
+            using(SqlCommand sqlCommand = new SqlCommand("Sales.uspCancelOrder",connection))
+            {
+                sqlCommand.CommandType = CommandType.StoredProcedure;
+
+                sqlCommand.Parameters.Add(new SqlParameter("@orderID", SqlDbType.Int));
+                sqlCommand.Parameters["@orderID"].Value = _parsedOrderID;
+
+                try
+                {
+                    connection.Open();
+                    sqlCommand.ExecuteNonQuery();
+                }
+                catch
+                {
+                    MessageBox.Show("The cancel operation was not completed.");
                 }
                 finally
                 {
