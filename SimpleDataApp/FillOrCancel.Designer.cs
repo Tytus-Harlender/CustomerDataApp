@@ -93,6 +93,7 @@
             this.btnFillOrder.TabIndex = 5;
             this.btnFillOrder.Text = "Fill order";
             this.btnFillOrder.UseVisualStyleBackColor = true;
+            this.btnFillOrder.Click += new System.EventHandler(this.btnFillOrder_Click);
             // 
             // btnFinishUpdates
             // 
@@ -102,6 +103,7 @@
             this.btnFinishUpdates.TabIndex = 6;
             this.btnFinishUpdates.Text = "Finish";
             this.btnFinishUpdates.UseVisualStyleBackColor = true;
+            this.btnFinishUpdates.Click += new System.EventHandler(this.btnFinishUpdates_Click);
             // 
             // label1
             // 
